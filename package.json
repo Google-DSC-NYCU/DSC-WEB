@@ -7,11 +7,15 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.0.5"
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.10"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.5",
     "@vue/compiler-sfc": "^3.0.5",
-    "vite": "^2.4.3"
+    "@vue/server-renderer": "^3.1.5",
+    "sass": "^1.35.2",
+    "vite": "^2.4.3",
+    "vite-ssg": "^0.12.0"
   }
 }
