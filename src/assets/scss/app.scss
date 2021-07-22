@@ -1,5 +1,5 @@
-$text: #000;
-$background: #fff;
+@import "./components/app/navbar/navbar.scss";
+@import "./shared/";
 
 *,
 *::before,
@@ -9,9 +9,11 @@ $background: #fff;
 
 html,
 body {
+  margin: 0;
   height: 100%;
-  color: $text;
-  background-color: $background;
+  color: #{$text};
+  background-color: #{$background};
+  font-size: 12px;
 }
 
 #app {
@@ -19,5 +21,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 60px;
+
+  @include navbar;
 }

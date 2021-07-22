@@ -1,0 +1,36 @@
+@mixin navbar {
+  #nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #dee2e6 !important;
+  }
+  .nav__left {
+    position: relative;
+  }
+  .nav__left::before {
+    margin-top: 1rem;
+    background-image: url("../logo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    min-width: 20vw;
+    min-height: 4rem;
+    content: "";
+  }
+
+  .nav__right {
+    display: flex;
+    justify-content: space-around;
+    min-width: 30vw;
+    align-items: center;
+    a {
+      font-size: 1.5rem;
+      color: #{$text};
+      text-decoration: none;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
