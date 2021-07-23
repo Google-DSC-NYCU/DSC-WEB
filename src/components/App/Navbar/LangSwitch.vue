@@ -1,5 +1,5 @@
 <template>
-  <button @click="switchLang">{{ nextLocale }}</button>
+  <button @click="switchLang" class="nav__btn">{{ nextLocale }}</button>
 </template>
 
 <script>

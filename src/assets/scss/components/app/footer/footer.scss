@@ -1,0 +1,22 @@
+@mixin footer {
+  #footer {
+    background-color: #f2f2f2;
+    width: 80vw;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 10vw;
+    bottom: 0;
+  }
+  .footer__left {
+    b {
+      font-size: 1.5rem;
+    }
+    .location {
+      font-size: 1.2rem;
+    }
+  }
+  .footer__right {
+  }
+}

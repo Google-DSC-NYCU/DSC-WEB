@@ -1,0 +1,21 @@
+@mixin home {
+  #main {
+    margin: 0 auto;
+    width: 90vw;
+    min-height: 400px;
+    background: url("../background.png") no-repeat;
+    &::after {
+      background-color: rgba($color: #000000, $alpha: 0.7);
+      content: "Google Developer Student Clubs are community groups for college and university students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome.";
+      color: white;
+      text-align: left;
+      line-height: 5vh;
+      font-size: 1.5rem;
+      width: 40vw;
+      height: 30vh;
+      position: absolute;
+      top: 30vh;
+      right: 0;
+    }
+  }
+}

@@ -1,7 +1,9 @@
 <template>
-  <button type="button" @click="state.count++">
+  <!-- <button type="button" @click="state.count++">
     count is: {{ state.count }}
-  </button>
+  </button> -->
+  <main id="main">
+  </main>
 </template>
 
 <script setup>

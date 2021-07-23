@@ -1,4 +1,8 @@
 @import "./components/app/navbar/navbar.scss";
+@import "./components/app/footer/footer.scss";
+
+@import "./pages/home.scss";
+
 @import "./shared/";
 
 *,
@@ -7,20 +11,33 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: custom-sans-serif;
+  src: local("微軟正黑體"), local("Microsoft JhengHei");
+  unicode-range: U+4E00-9FFF;
+}
+
+@font-face {
+  font-family: custom-sans-serif;
+  src: local(Helvetica), local(Segoe UI);
+  unicode-range: U+00-024F;
+}
+
 html,
 body {
   margin: 0;
   height: 100%;
   color: #{$text};
   background-color: #{$background};
+  font-family: custom-sans-serif;
   font-size: 12px;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
 
+  @include home;
+
   @include navbar;
+  @include footer;
 }

@@ -1,23 +1,27 @@
 @mixin navbar {
   #nav {
+    padding: 10px 0;
     margin: 0 auto;
+    border-bottom: 1px solid #dee2e6 !important;
+    margin-bottom: 10vh;
+  }
+  .nav__container {
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid #dee2e6 !important;
   }
   .nav__left {
-    position: relative;
+    // position: relative;
   }
-  .nav__left::before {
-    margin-top: 1rem;
-    background-image: url("../logo.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: inline-block;
-    min-width: 20vw;
-    min-height: 4rem;
-    content: "";
-  }
+  // .nav__left::before {
+  //   margin-top: 1rem;
+  //   background-image: url("../logo.png");
+  //   background-repeat: no-repeat;
+  //   background-size: 100%;
+  //   display: inline-block;
+  //   min-width: 20vw;
+  //   min-height: 4rem;
+  //   content: "";
+  // }
 
   .nav__right {
     display: flex;
@@ -25,12 +29,22 @@
     min-width: 30vw;
     align-items: center;
     a {
+      font-weight: bold;
       font-size: 1.5rem;
       color: #{$text};
       text-decoration: none;
       &:hover {
         color: black;
       }
+    }
+  }
+  .nav__btn {
+    font-size: 1.5rem;
+    border: 0;
+    background-color: #{$background};
+    color: #{$text};
+    &:hover {
+      color: black;
     }
   }
 }

@@ -1,12 +1,15 @@
 <template>
   <nav id="nav">
-    <div class="nav__left">
-    </div>
-    <div class="nav__right">
-      <router-link to="/">{{ t('__home') }}</router-link>
-      <router-link to="/about">{{ t('__about') }}</router-link>
-      <router-link to="/">{{ t('__events') }}</router-link>
-      <LangSwitch></LangSwitch>
+    <div class="nav__container">
+      <div class="nav__left">
+        <img :src="logo" width="260">
+      </div>
+      <div class="nav__right">
+        <router-link to="/">{{ t('__home') }}</router-link>
+        <router-link to="/about">{{ t('__about') }}</router-link>
+        <router-link to="/events">{{ t('__events') }}</router-link>
+        <LangSwitch></LangSwitch>
+        </div>
     </div>
   </nav>
 </template>
@@ -15,6 +18,7 @@
 import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n/index'
 import LangSwitch from './LangSwitch.vue'
+import logo from '@/assets/logo.png'
 
 export default defineComponent({
   components:{
@@ -23,7 +27,8 @@ export default defineComponent({
   setup() {
     const { t } = useI18n()
     return{
-      t
+      t,
+      logo
     }
   },
 })
