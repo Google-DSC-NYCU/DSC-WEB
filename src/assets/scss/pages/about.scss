@@ -1,4 +1,35 @@
+@import "../shared";
+
 @mixin about {
-  #about {
+  .about__container {
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    p,
+    b {
+      font-size: 1.5rem;
+    }
+    a {
+      color: $text;
+      margin: 0 0.5rem;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .containter__card {
+    min-width: 20vw;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 1rem;
+  }
+}
+
+@include xsOnly {
+  .containter__card {
+    min-width: 80vw !important;
+    margin-bottom: 1rem;
   }
 }

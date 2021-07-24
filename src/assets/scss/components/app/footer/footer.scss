@@ -1,3 +1,5 @@
+@import "../../../shared/";
+
 @mixin footer {
   #footer {
     background-color: #f2f2f2;
@@ -18,5 +20,15 @@
     }
   }
   .footer__right {
+  }
+}
+
+@include xsOnly {
+  #footer {
+    flex-direction: column;
+  }
+  .footer__left {
+    font-size: 1rem;
+    padding: 1rem 0;
   }
 }

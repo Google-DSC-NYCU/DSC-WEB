@@ -1,3 +1,5 @@
+@import "../../../shared/";
+
 @mixin navbar {
   #nav {
     padding: 10px 0;
@@ -46,5 +48,11 @@
     &:hover {
       color: black;
     }
+  }
+}
+
+@include xsOnly {
+  .nav__container {
+    flex-direction: column;
   }
 }

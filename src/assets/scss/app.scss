@@ -2,6 +2,7 @@
 @import "./components/app/footer/footer.scss";
 
 @import "./pages/home.scss";
+@import "./pages/about.scss";
 
 @import "./shared/";
 
@@ -37,6 +38,7 @@ body {
   text-align: center;
 
   @include home;
+  @include about;
 
   @include navbar;
   @include footer;

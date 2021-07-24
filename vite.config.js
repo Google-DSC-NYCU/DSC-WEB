@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import Vue from '@vitejs/plugin-vue'
+import Icons from 'vite-plugin-icons'
 import { join } from 'path'
 
 // https://vitejs.dev/config/
@@ -9,5 +10,5 @@ export default defineConfig({
       '@': `${join(__dirname, 'src')}`
     }
   },
-  plugins: [vue()]
+  plugins: [Vue(), Icons()]
 })
