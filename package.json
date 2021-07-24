@@ -1,6 +1,7 @@
 {
   "name": "dsc-web",
   "version": "0.0.0",
+  "homepage": "https://google-dsc-nycu.github.io/dsc-web/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
