@@ -37,9 +37,6 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: npm ci
 
-      - name: Linting 🔍
-        run: npm run lint
-
       - name: Build production 🚧
         run: npm run build
 

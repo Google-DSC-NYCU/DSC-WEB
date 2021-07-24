@@ -51,6 +51,30 @@ export default defineComponent({
       facebook: '#',
       ig: '#',
       id: '2'
+    },
+    {
+      name: 'Sunny Yeh',
+      title: 'Team member',
+      github: 'https://github.com/jhih-ching-yeh',
+      facebook: '#',
+      ig: '#',
+      id: '3'
+    },
+    {
+      name: 'cckaron',
+      title: 'Team member',
+      github: 'https://github.com/cckaron',
+      facebook: '#',
+      ig: '#',
+      id: '4'
+    },
+    {
+      name: 'Ariel Chen',
+      title: 'Team member',
+      github: '#',
+      facebook: '#',
+      ig: '#',
+      id: '5'
     }
   ])
   return{

@@ -22,12 +22,16 @@
   .containter__card {
     min-width: 20vw;
     padding: 0.5rem 0.5rem;
+    margin: 1rem 1rem;
     border: 1px solid #dee2e6;
     border-radius: 1rem;
   }
 }
 
 @include xsOnly {
+  .about__container {
+    padding-bottom: 30vh;
+  }
   .containter__card {
     min-width: 80vw !important;
     margin-bottom: 1rem;
