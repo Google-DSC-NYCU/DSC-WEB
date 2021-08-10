@@ -4,16 +4,32 @@
   </button> -->
   <main id="main">
   </main>
+  <Footer></Footer>
 </template>
 
-<script setup>
-import { reactive } from 'vue'
+<script>
+import { defineComponent, reactive } from 'vue'
+import Footer from '@/components/App/Footer/Footer.vue'
 
-const state = reactive({ count: 0 })
+export default defineComponent({
+  components: {
+    Footer
+  },
+  setup(){
+    const state = reactive({ count: 0 })
+  }
+})
+
+
+
 </script>
 
-<style scoped>
-a {
-  color: #42b983;
-}
-</style>
+
+<style lang="scss" scoped>
+
+  #footer {
+    position: fixed;
+    bottom: 0;
+    left: 10vw;
+  }
+  </style>

@@ -5,6 +5,7 @@
         <b>{{data.name}}</b>
         <p>{{data.title}}</p>
         <div class="about__link">
+          <img :src="data.img" alt="">
           <a :href="data.github">
             <component :is="IconGitHub"></component>
           </a>
@@ -18,14 +19,20 @@
       </div>
     </div>
   </main>
+  <Footer></Footer>
 </template>
 <script>
 import { defineComponent, reactive } from 'vue'
 import IconGitHub from 'virtual:vite-icons/fa-brands/github'
 import IconFacebook from 'virtual:vite-icons/fa-brands/facebook'
 import IconInstagram from 'virtual:vite-icons/fa-brands/instagram'
+import temp from '@/assets/temp.jpg'
+import Footer from '@/components/App/Footer/Footer.vue'
 
 export default defineComponent({
+  components: {
+    Footer
+  },
   setup() {
     const memberData = reactive([
     {
@@ -34,7 +41,8 @@ export default defineComponent({
       github: 'https://github.com/ianchen0119',
       facebook: '#',
       ig: '#',
-      id: '0'
+      id: '0',
+      img: temp
     },
     {
       name: 'Lance Wang',
@@ -42,7 +50,8 @@ export default defineComponent({
       github: 'https://github.com/LanceWang12',
       facebook: '#',
       ig: '#',
-      id: '1'
+      id: '1',
+      img: temp
     },
     {
       name: 'CCW',
@@ -50,7 +59,8 @@ export default defineComponent({
       github: 'https://github.com/t106362512',
       facebook: '#',
       ig: '#',
-      id: '2'
+      id: '2',
+      img: temp
     },
     {
       name: 'Sunny Yeh',
@@ -58,7 +68,8 @@ export default defineComponent({
       github: 'https://github.com/jhih-ching-yeh',
       facebook: '#',
       ig: '#',
-      id: '3'
+      id: '3',
+      img: temp
     },
     {
       name: 'cckaron',
@@ -66,7 +77,8 @@ export default defineComponent({
       github: 'https://github.com/cckaron',
       facebook: '#',
       ig: '#',
-      id: '4'
+      id: '4',
+      img: temp
     },
     {
       name: 'Ariel Chen',
@@ -74,7 +86,8 @@ export default defineComponent({
       github: '#',
       facebook: '#',
       ig: '#',
-      id: '5'
+      id: '5',
+      img: temp
     }
   ])
   return{

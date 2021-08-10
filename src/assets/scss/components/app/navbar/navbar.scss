@@ -1,5 +1,7 @@
 @import "../../../shared/";
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
 @mixin navbar {
   #nav {
     padding: 10px 0;
@@ -13,6 +15,13 @@
   }
   .nav__left {
     // position: relative;
+  }
+
+  .nav__location {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #656c73;
   }
   // .nav__left::before {
   //   margin-top: 1rem;

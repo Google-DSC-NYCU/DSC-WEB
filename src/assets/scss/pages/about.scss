@@ -25,6 +25,14 @@
     margin: 1rem 1rem;
     border: 1px solid #dee2e6;
     border-radius: 1rem;
+    img {
+      max-width: 18vw;
+      max-height: 18vw;
+      border-radius: 15rem;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      display: block;
+    }
   }
 }
 

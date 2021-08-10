@@ -3,6 +3,7 @@
     <div class="nav__container">
       <div class="nav__left">
         <img :src="logo" width="260">
+        <p class="nav__location">NYCU</p>
       </div>
       <div class="nav__right">
         <router-link to="/">{{ t('__home') }}</router-link>

@@ -2,12 +2,15 @@
   "name": "dsc-web",
   "version": "0.0.0",
   "homepage": "https://google-dsc-nycu.github.io/dsc-web/",
+  "type": "module",
   "scripts": {
+    "pre-build": "node ./script/pre-build/index.js",
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run pre-build && vite build",
     "serve": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "vue": "^3.0.5",
     "vue-i18n": "^9.1.3",
     "vue-router": "^4.0.10"
