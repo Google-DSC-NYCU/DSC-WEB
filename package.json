@@ -2,7 +2,7 @@
   "name": "dsc-web",
   "version": "0.0.0",
   "homepage": "https://google-dsc-nycu.github.io/dsc-web/",
-  "type": "module",
+  
   "scripts": {
     "pre-build": "node ./script/pre-build/index.js",
     "dev": "vite",
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@iconify/json": "^1.1.380",
+    "@types/node": "^16.4.13",
     "@vitejs/plugin-vue": "^1.2.5",
     "@vue/compiler-sfc": "^3.0.5",
     "@vue/server-renderer": "^3.1.5",

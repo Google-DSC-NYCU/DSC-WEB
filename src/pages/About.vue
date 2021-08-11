@@ -27,6 +27,10 @@ import IconGitHub from 'virtual:vite-icons/fa-brands/github'
 import IconFacebook from 'virtual:vite-icons/fa-brands/facebook'
 import IconInstagram from 'virtual:vite-icons/fa-brands/instagram'
 import temp from '@/assets/temp.jpg'
+import sunny from '@/assets/image/sunny.png'
+import ccw from '@/assets/image/ccw.png'
+import ian from '@/assets/image/ian.jpg'
+import aaron from '@/assets/image/aaron.jpeg'
 import Footer from '@/components/App/Footer/Footer.vue'
 
 export default defineComponent({
@@ -42,7 +46,7 @@ export default defineComponent({
       facebook: '#',
       ig: '#',
       id: '0',
-      img: temp
+      img: ian
     },
     {
       name: 'Lance Wang',
@@ -60,7 +64,7 @@ export default defineComponent({
       facebook: '#',
       ig: '#',
       id: '2',
-      img: temp
+      img: ccw
     },
     {
       name: 'Sunny Yeh',
@@ -69,16 +73,16 @@ export default defineComponent({
       facebook: '#',
       ig: '#',
       id: '3',
-      img: temp
+      img: sunny
     },
     {
-      name: 'cckaron',
+      name: 'Aaron',
       title: 'Team member',
       github: 'https://github.com/cckaron',
       facebook: '#',
       ig: '#',
       id: '4',
-      img: temp
+      img: aaron
     },
     {
       name: 'Ariel Chen',

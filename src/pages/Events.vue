@@ -1,8 +1,10 @@
 <template>
-  <div v-for="data in post" :key="data.id">
-    <b>{{data.title}}</b>
-    <a :href="data.content">Link</a>
-  </div>
+  <main>
+    <div class="event__card" v-for="data in post" :key="data.id">
+      <b>{{data.title}}</b>
+      <a :href="data.content">Link</a>
+    </div>
+  </main>
   <Footer></Footer>
 </template>
 <script>

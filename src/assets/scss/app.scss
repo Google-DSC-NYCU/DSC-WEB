@@ -3,6 +3,7 @@
 
 @import "./pages/home.scss";
 @import "./pages/about.scss";
+@import "./pages/events.scss";
 
 @import "./shared/";
 
@@ -39,6 +40,7 @@ body {
 
   @include home;
   @include about;
+  @include events;
 
   @include navbar;
   @include footer;

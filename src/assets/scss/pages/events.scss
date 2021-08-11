@@ -1,0 +1,17 @@
+@import "../shared";
+
+@mixin events {
+  .event__card {
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      background-color: #1a73e8;
+      color: #fff;
+      min-width: 5rem;
+      margin: auto;
+      border-radius: 0.5rem;
+      padding: 2px;
+    }
+  }
+}
