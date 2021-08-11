@@ -26,8 +26,8 @@
     border: 1px solid #dee2e6;
     border-radius: 1rem;
     img {
-      max-width: 18vw;
-      max-height: 18vw;
+      max-width: 16vw;
+      max-height: 16vw;
       border-radius: 15rem;
       margin: 0 auto;
       margin-bottom: 1rem;
@@ -43,5 +43,9 @@
   .containter__card {
     min-width: 80vw !important;
     margin-bottom: 1rem;
+    img {
+      max-width: 30vw !important;
+      max-height: 30vw !important;
+    }
   }
 }

@@ -1,9 +1,21 @@
 @import "../shared";
 
 @mixin events {
+  .event__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .event__card {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    img {
+      max-width: 20vw;
+    }
+    b {
+      padding: 1rem 0;
+    }
     a {
       text-decoration: none;
       background-color: #1a73e8;
@@ -12,6 +24,14 @@
       margin: auto;
       border-radius: 0.5rem;
       padding: 2px;
+    }
+  }
+}
+
+@include xsOnly {
+  .event__card {
+    img {
+      max-width: 80vw !important;
     }
   }
 }

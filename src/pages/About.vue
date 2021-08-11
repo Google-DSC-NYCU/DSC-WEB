@@ -2,10 +2,10 @@
   <main id="about">
     <div class="about__container">
       <div v-for="data in memberData" :key="data.id" class="containter__card">
-        <b>{{data.name}}</b>
-        <p>{{data.title}}</p>
         <div class="about__link">
           <img :src="data.img" alt="">
+          <b>{{data.name}}</b>
+          <p>{{data.title}}</p>
           <a :href="data.github">
             <component :is="IconGitHub"></component>
           </a>
@@ -14,6 +14,9 @@
           </a>
           <a :href="data.ig">
             <component :is="IconInstagram"></component>
+          </a>
+          <a :href="data.ln">
+            <component :is="IconLinkedIn"></component>
           </a>
         </div>
       </div>
@@ -25,6 +28,7 @@
 import { defineComponent, reactive } from 'vue'
 import IconGitHub from 'virtual:vite-icons/fa-brands/github'
 import IconFacebook from 'virtual:vite-icons/fa-brands/facebook'
+import IconLinkedIn from 'virtual:vite-icons/fa-brands/linkedin'
 import IconInstagram from 'virtual:vite-icons/fa-brands/instagram'
 import temp from '@/assets/temp.jpg'
 import sunny from '@/assets/image/sunny.png'
@@ -46,7 +50,8 @@ export default defineComponent({
       facebook: '#',
       ig: '#',
       id: '0',
-      img: ian
+      img: ian,
+      ln: 'https://www.linkedin.com/in/ian-chen-88b70b1aa/'
     },
     {
       name: 'Lance Wang',
@@ -55,7 +60,8 @@ export default defineComponent({
       facebook: '#',
       ig: '#',
       id: '1',
-      img: temp
+      img: temp,
+      ln: ''
     },
     {
       name: 'CCW',
@@ -64,7 +70,8 @@ export default defineComponent({
       facebook: '#',
       ig: '#',
       id: '2',
-      img: ccw
+      img: ccw,
+      ln: ''
     },
     {
       name: 'Sunny Yeh',
@@ -73,7 +80,8 @@ export default defineComponent({
       facebook: '#',
       ig: '#',
       id: '3',
-      img: sunny
+      img: sunny,
+      ln: ''
     },
     {
       name: 'Aaron',
@@ -82,7 +90,8 @@ export default defineComponent({
       facebook: '#',
       ig: '#',
       id: '4',
-      img: aaron
+      img: aaron,
+      ln: ''
     },
     {
       name: 'Ariel Chen',
@@ -91,14 +100,16 @@ export default defineComponent({
       facebook: '#',
       ig: '#',
       id: '5',
-      img: temp
+      img: temp,
+      ln: 'https://www.linkedin.com/in/ching-chen-21baa01b5/'
     }
   ])
   return{
     memberData,
     IconGitHub,
     IconFacebook,
-    IconInstagram
+    IconInstagram,
+    IconLinkedIn
   }
   },
 })

@@ -20,10 +20,18 @@
       right: 0;
     }
   }
+  #main_xs {
+    display: none;
+  }
 }
 
 @include xsOnly {
-  #main::after {
+  #main {
     display: none;
+  }
+  #main_xs {
+    display: block !important;
+    color: #202124 !important;
+    font-size: 1.5rem;
   }
 }
