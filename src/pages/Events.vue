@@ -20,7 +20,7 @@ export default defineComponent({
     Footer
   },
   setup() {
-    console.log(post)
+    // console.log(post)
     return{
       post
     }
